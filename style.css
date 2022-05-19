@@ -16,6 +16,16 @@ body {
 .loader {
   position: relative;
   transform: skewY(-15deg) translate(50px) translateY(50px);
+  animation: animateColor 2.5s linear infinite;
+}
+
+@keyframes animateColor {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
 }
 
 .loader span {
@@ -25,6 +35,7 @@ body {
   display: block;
   background: #3e3f46;
   transition: 0.5s;
+  z-index: var(--i);
 }
 
 .loader span:hover {
@@ -60,4 +71,11 @@ body {
   background: #f00;
   transform-origin: bottom;
   transform: skewX(45deg);
+  background: #35383e;
+  transition: 0.5s;
+}
+
+.loader span:hover::after {
+  background: #2982b9;
+  transition: 0s;
 }
