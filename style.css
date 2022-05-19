@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #434750;
+  overflow: hidden;
+}
+
+.loader {
+  position: relative;
+}
+
+.loader span {
+  position: relative;
+  width: 200px;
+  height: 40px;
+  display: block;
+  background: #3e3f46;
+  transition: 0.5s;
+}
+
+.loader span:hover {
+  background: #33a3ee;
+}
